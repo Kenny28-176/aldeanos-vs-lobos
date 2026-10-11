@@ -1,0 +1,26 @@
+name: Idea o mejora
+description: Propón un rol, una opción o cualquier mejora.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: ¿Qué te gustaría que hiciera?
+      description: Cuéntalo con tus palabras, sin prisa.
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: ¿Para qué serviría?
+      description: ¿Qué problema resuelve o qué partida mejoraría?
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: ¿Has pensado en otras formas de hacerlo? (opcional)
+  - type: markdown
+    attributes:
+      value: |
+        Recuerda que el contenido del proyecto es **original**: no copies textos, imágenes ni reglamentos de juegos de
+        terceros (ver [CONTRIBUTING](https://github.com/Kenny28-176/aldeanos-vs-lobos/blob/main/CONTRIBUTING.md)).

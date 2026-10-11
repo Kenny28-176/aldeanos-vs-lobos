@@ -1,0 +1,496 @@
+{
+  "_nota": "Definición de cada rol. 'implementado' indica si el motor ya lo soporta (solo esos se pueden poner en el mazo). 'copias' = máximo de cartas de ese rol en un mazo. 'grupo' = se juega siempre completo (todas sus copias o ninguna). 'requierePueblo' = versión simplificada que necesita el modo Pueblo (edificios) para funcionar completa.",
+  "roles": {
+    "lobo": {
+      "nombre": "Hombre Lobo",
+      "subtitulo": "The Werewolf • Luna Feral",
+      "bando": "lobos",
+      "capa": 1,
+      "copias": 4,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres un Hombre Lobo (The Werewolf). De día finges ser un aldeano más; de noche, con tu manada, devoras a un habitante.",
+        "cuando": "Despiertas cada noche con los demás lobos.",
+        "accion": "En tu celular verás a tus compañeros y la lista de víctimas posibles. Tenéis que elegir TODOS a la misma víctima antes de que acabe el tiempo; si no os ponéis de acuerdo, nadie muere esa noche.",
+        "objetivo": "Eliminar a todos los habitantes que no sean lobos."
+      }
+    },
+    "aldeano": {
+      "nombre": "El Aldeano",
+      "subtitulo": "The Villager • Raíces Profundas",
+      "bando": "aldea",
+      "capa": 1,
+      "copias": 9,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Aldeano (The Villager). No tienes ningún poder sobrenatural. Tus armas son tu olfato para detectar mentiras y tu voz en el debate.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "De día debate y vota en tu celular a quien creas que es un Hombre Lobo.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "lobo_feroz": {
+      "nombre": "El Lobo Feroz",
+      "subtitulo": "The Dire Wolf • El Devorador",
+      "bando": "lobos",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Lobo Feroz (The Dire Wolf): cazas con la manada y, además, tienes un apetito voraz de una segunda víctima.",
+        "cuando": "Despiertas con los lobos y, después, otra vez tú solo.",
+        "accion": "Mientras no haya caído ningún lobo (ni un Niño Salvaje ni la Doble Naturaleza), cada noche eliges en secreto una segunda víctima. En cuanto cae uno, pierdes ese poder.",
+        "objetivo": "Eliminar a todos los habitantes que no sean lobos."
+      }
+    },
+    "infecto": {
+      "nombre": "El Corruptor",
+      "subtitulo": "The Corruptor • Portador de la Mácula",
+      "bando": "lobos",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Corruptor (The Corruptor): tu mordisco oscuro puede corromper a un habitante y convertirlo en lobo.",
+        "cuando": "Despiertas con los lobos y, después, un momento tú solo.",
+        "accion": "Una vez por partida, puedes infectar a la víctima de la manada: no muere, se convierte en Hombre Lobo en secreto y conserva su poder.",
+        "objetivo": "Eliminar a todos los habitantes que no sean lobos."
+      }
+    },
+    "aldeano_aldeano": {
+      "nombre": "El Aldeano de la Verdad",
+      "subtitulo": "The Villager of Truth • Inocencia Revelada",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "cartaPublica": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Aldeano de la Verdad (The Villager of Truth): tu carta es pública y toda la aldea sabe que eres inocente. No tienes poderes ocultos.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "Usa tu credibilidad: tu palabra pesa en los debates. Eres un gran candidato a Alguacil.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "vidente": {
+      "nombre": "La Vidente",
+      "subtitulo": "The Seer • El Ojo Místico",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "f",
+      "guia": {
+        "resumen": "Eres la Vidente (The Seer): cada noche descubres la verdadera carta y rol de un jugador.",
+        "cuando": "Despiertas cada noche.",
+        "accion": "Elige en tu celular a un jugador y verás su carta al instante (no se puede cambiar). Tus visiones quedan guardadas en «Ver mi carta». Ayuda a la aldea con discreción: si los lobos te descubren, irán a por ti.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "cupido": {
+      "nombre": "El Arquero del Amor",
+      "subtitulo": "The Archer • Destinos Unidos",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Arquero del Amor (The Archer): con tus flechas unes a dos jugadores para siempre (puedes ser tú).",
+        "cuando": "Solo despiertas la primera noche.",
+        "accion": "Elige a los dos enamorados en tu celular. Si uno muere, el otro muere de pena. Si son de bandos distintos (aldeano y lobo), su objetivo pasa a ser quedarse solos.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "bruja": {
+      "nombre": "La Alquimista",
+      "subtitulo": "The Alchemist • Brebajes del Destino",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "f",
+      "guia": {
+        "resumen": "Eres la Alquimista (The Alchemist): tienes dos pociones, cada una de un solo uso: una cura a la víctima de los lobos y la otra mata a quien elijas.",
+        "cuando": "Despiertas cada noche, después de los lobos.",
+        "accion": "Verás quién ha sido atacado esa noche. Puedes curarlo (incluso si eres tú), envenenar a alguien, las dos cosas o nada.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "cazador": {
+      "nombre": "El Cazador",
+      "subtitulo": "The Hunter • Último Disparo",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Cazador (The Hunter): si mueres devorado, linchado o de pena, te llevas a alguien contigo antes de caer.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "Cuando mueras, tu celular te pedirá elegir a quién disparas. Apunta bien.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "nina": {
+      "nombre": "La Espía Silenciosa",
+      "subtitulo": "The Quiet Spy • Ojos en la Noche",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "f",
+      "guia": {
+        "resumen": "Eres la Espía Silenciosa (The Quiet Spy): puedes espiar a los Hombres Lobo mientras eligen a su víctima.",
+        "cuando": "Durante el turno de los lobos, cada noche.",
+        "accion": "Tu celular te ofrecerá espiar: verás el nombre de un lobo. Pero si te descubren, morirás esa noche en lugar de su víctima (y el Guardián no puede salvarte).",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "protector": {
+      "nombre": "El Guardián",
+      "subtitulo": "The Guardian • Protección Divina",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Guardián (The Guardian): cada noche proteges con tu escudo sagrado a un jugador del ataque de los lobos.",
+        "cuando": "Despiertas cada noche, antes que los lobos.",
+        "accion": "Elige a quién proteges (puedes ser tú), pero nunca a la misma persona dos noches seguidas. No protege del veneno ni de la Espía descubierta.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "anciano": {
+      "nombre": "El Anciano Sabio",
+      "subtitulo": "The Elder • Resistencia Ancestral",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Anciano Sabio (The Elder): tu sabiduría y resistencia te permiten sobrevivir al primer ataque de los lobos.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "Sobrevives en silencio al primer ataque de los lobos. Pero si la aldea te condena (linchado, envenenado o de un disparo), todos los aldeanos pierden sus poderes.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "cabeza_turco": {
+      "nombre": "El Chivo Expiatorio",
+      "subtitulo": "The Scapegoat • La Culpa del Pueblo",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Chivo Expiatorio (The Scapegoat): si la votación termina en empate, la condena recae sobre ti.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "Evita los empates. Si te linchan, antes de irte decides en tu celular quién podrá votar en la siguiente votación.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "tonto": {
+      "nombre": "El Inocente del Pueblo",
+      "subtitulo": "The Village Fool • Indulto Sagrado",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Inocente del Pueblo (The Village Fool): si la aldea te lincha, reconocen tu inocencia y te perdonan la vida.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "La primera vez que te linchen sobrevives, pero pierdes tu derecho a voto (y el cargo de Alguacil si lo tenías). Si te devoran o te disparan, mueres.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "dos_hermanas": {
+      "nombre": "Los Susurros",
+      "subtitulo": "The Whispers • Confidencias en la Sombra",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 2,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Sois Los Susurros (The Whispers): compartís confidencias secretas en la aldea y sabéis quién es vuestra cómplice.",
+        "cuando": "Solo la primera noche, para reconoceros.",
+        "accion": "Tu celular te dirá quién comparte tus susurros. Podéis confiar plenamente entre vosotros.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      },
+      "grupo": true
+    },
+    "tres_hermanos": {
+      "nombre": "La Hermandad",
+      "subtitulo": "The Brotherhood • Vínculo de Sangre",
+      "bando": "aldea",
+      "capa": 2,
+      "copias": 3,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Formáis La Hermandad (The Brotherhood): tres aliados unidos por sangre y lealtad en la aldea.",
+        "cuando": "Solo la primera noche, para reconoceros.",
+        "accion": "Tu celular te dirá quiénes son tus hermanos. Podéis confiar entre vosotros.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      },
+      "grupo": true
+    },
+    "zorro": {
+      "nombre": "El Zorro",
+      "subtitulo": "The Fox • Rastro de Bestias",
+      "bando": "aldea",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "usaVecinos": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Zorro (The Fox): tu agudo olfato detecta a los Hombres Lobo.",
+        "cuando": "Despiertas cada noche.",
+        "accion": "Elige a un jugador: olfatearás a él y a sus dos vecinos vivos. Si hay algún lobo, conservas el olfato; si no hay ninguno, lo pierdes para siempre. No estás obligado a usarlo.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "domador": {
+      "nombre": "La Domadora",
+      "subtitulo": "The Strength • La Fuerza y la Bestia",
+      "bando": "aldea",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "usaVecinos": true,
+      "genero": "f",
+      "guia": {
+        "resumen": "Eres la Domadora (The Strength): tu fiero oso huele a los lobos que se sientan a tu lado.",
+        "cuando": "Solo despiertas la primera noche, para conocer tu poder.",
+        "accion": "Cada mañana, si alguno de tus vecinos vivos es un Hombre Lobo, el oso gruñirá en la tablet. Escucha bien.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "juez": {
+      "nombre": "El Juez",
+      "subtitulo": "The Judge • Balanza de la Justicia",
+      "bando": "aldea",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Juez (The Judge): custodio de la balanza, puedes ordenar un nuevo juicio en el pueblo.",
+        "cuando": "Solo despiertas la primera noche, para conocer tu botón secreto.",
+        "accion": "Una vez por partida, durante una votación, pulsa en secreto «Segunda votación» en tu celular: tras esa votación habrá otra inmediatamente, sin debate.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "caballero": {
+      "nombre": "El Caballero de las Espadas",
+      "subtitulo": "The Knight of Swords • Hoja Vengadora",
+      "bando": "aldea",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "usaVecinos": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Caballero de las Espadas (The Knight of Swords): tu espada envenena a quien ose morderte.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "Si los lobos te devoran, el lobo responsable más cercano a tu izquierda se contagia y muere la noche siguiente.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "sirvienta": {
+      "nombre": "La Doncella Leal",
+      "subtitulo": "The Handmaiden • Sacrificio Supremo",
+      "bando": "ambiguo",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "f",
+      "guia": {
+        "resumen": "Eres la Doncella Leal (The Handmaiden): tu entrega te permite sacrificarte por cualquiera.",
+        "cuando": "Te llaman tras cada linchamiento, antes de revelar la carta.",
+        "accion": "Si quieres, ocupas el lugar del linchado: revelas que eras la Doncella y tomas en secreto su carta y sus poderes, como si fuera tu primera noche. No puedes si estás enamorada.",
+        "objetivo": "Que gane tu bando (el de la carta que tengas)."
+      }
+    },
+    "comediante": {
+      "nombre": "El Bufón de las Mil Caras",
+      "subtitulo": "The Jester & Actor • El Arte del Disfraz",
+      "bando": "ambiguo",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Bufón de las Mil Caras (The Jester & Actor): puedes interpretar y adoptar las artes de otros personajes.",
+        "cuando": "Despiertas cada noche, el primero.",
+        "accion": "Al empezar se ponen boca arriba tres cartas con poder. Cada noche puedes elegir una: esa noche usas su poder y la carta se retira.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      }
+    },
+    "nino_salvaje": {
+      "nombre": "El Niño Salvaje",
+      "subtitulo": "The Wild Child • Corazón Feral",
+      "bando": "ambiguo",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": false,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Niño Salvaje (The Wild Child): un aldeano… mientras tu mentor viva.",
+        "cuando": "Solo despiertas la primera noche, para elegir a tu mentor.",
+        "accion": "Elige a otro jugador como mentor. Si muere, te convertirás en Hombre Lobo en secreto y despertarás con la manada.",
+        "objetivo": "Con la aldea mientras tu mentor viva; con los lobos si muere."
+      }
+    },
+    "perro_lobo": {
+      "nombre": "La Doble Naturaleza",
+      "subtitulo": "The Dual Nature • Sabueso o Fiera",
+      "bando": "ambiguo",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": false,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres la Doble Naturaleza (The Dual Nature): ¿fiel a los humanos o a la llamada salvaje de la manada?",
+        "cuando": "La primera noche, para decidir.",
+        "accion": "Elige para siempre ser Aldeano o Hombre Lobo. Si eliges lobo, despiertas con la manada desde esa noche.",
+        "objetivo": "El de tu elección: la aldea o los lobos."
+      }
+    },
+    "flautista": {
+      "nombre": "El Flautista de las Sombras",
+      "subtitulo": "The Shadow Piper • Hechizo Nocturno",
+      "bando": "solitario",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Flautista de las Sombras (The Shadow Piper): tu música hechiza a la aldea.",
+        "cuando": "Despiertas cada noche, después de la Alquimista.",
+        "accion": "Cada noche hechizas a dos jugadores. Los hechizados despiertan después y se reconocen. Si el Corruptor te infecta, te vuelves un lobo más.",
+        "objetivo": "Hechizar a todos los jugadores vivos."
+      }
+    },
+    "angel": {
+      "nombre": "El Ángel Celestial",
+      "subtitulo": "The Divine Angel • Deseo de Ascensión",
+      "bando": "solitario",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Ángel Celestial (The Divine Angel): quieres volver al cielo cuanto antes.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "La partida empieza con un debate y una votación antes de la primera noche. Si consigues que te expulsen en esa votación inicial, ganas tú solo. Si no, eres un aldeano más.",
+        "objetivo": "Ser eliminado en la primera votación."
+      }
+    },
+    "sectario": {
+      "nombre": "El Cultista",
+      "subtitulo": "The Cultist • Ritual Oscuro",
+      "bando": "solitario",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Cultista (The Cultist): odias a la mitad de la aldea y celebras ritos secretos.",
+        "cuando": "Nunca despiertas de noche.",
+        "accion": "Al empezar, la aldea se divide en dos grupos (Sol y Luna). Manipula los debates y las votaciones para acabar con el otro grupo.",
+        "objetivo": "Que muera todo el otro grupo y sigas vivo."
+      }
+    },
+    "albino": {
+      "nombre": "El Lobo Lunar",
+      "subtitulo": "The Moon Wolf • El Depredador Pálido",
+      "bando": "solitario",
+      "capa": 3,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Lobo Lunar (The Moon Wolf): una bestia solitaria que aborrece a los aldeanos… y también a la manada.",
+        "cuando": "Despiertas con la manada cada noche, y una noche de cada dos (las pares) despiertas tú solo.",
+        "accion": "Con la manada eliges víctima como uno más. En tus noches puedes matar a un Hombre Lobo.",
+        "objetivo": "Ser el único superviviente de la aldea."
+      }
+    },
+    "piromano": {
+      "nombre": "El Portador del Fuego",
+      "subtitulo": "The Fire-Bringer • Purificación Ígnea",
+      "bando": "aldea",
+      "capa": 4,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "usaVecinos": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Portador del Fuego (The Fire-Bringer): puedes envolver en llamas a un jugador. Si los Hombres Lobo lo atacan esa misma noche, se salvará, y el lobo más cercano a su derecha morirá en su lugar.",
+        "cuando": "Despiertas cada noche antes que los Hombres Lobo.",
+        "accion": "Elige a un jugador (solo puedes usar tu poder una vez por partida).",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      },
+      "requierePueblo": true,
+      "nota": "Versión simplificada, sin edificios (la versión completa llegará con el modo Pueblo)."
+    },
+    "cuervo": {
+      "nombre": "El Heraldo del Cuervo",
+      "subtitulo": "The Raven's Omen • Augurio de Muerte",
+      "bando": "aldea",
+      "capa": 4,
+      "copias": 1,
+      "implementado": true,
+      "revelarAlMorir": true,
+      "genero": "m",
+      "guia": {
+        "resumen": "Eres el Heraldo del Cuervo (The Raven's Omen): al final de cada noche, puedes maldecir a un jugador. Ese jugador comenzará la votación del día siguiente con 2 votos en contra.",
+        "cuando": "Despiertas al final de cada noche.",
+        "accion": "Elige a un jugador para maldecirlo.",
+        "objetivo": "Eliminar a todos los Hombres Lobo."
+      },
+      "requierePueblo": true,
+      "nota": "Versión simplificada, sin edificios (la versión completa llegará con el modo Pueblo)."
+    }
+  }
+}

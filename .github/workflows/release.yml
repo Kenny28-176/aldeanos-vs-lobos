@@ -1,0 +1,35 @@
+name: Publicar versión
+
+# Al subir una etiqueta de versión (por ejemplo v0.2.0) se crea la «release» de GitHub con las notas del CHANGELOG.
+#   git tag v0.2.0 && git push origin v0.2.0
+on:
+  push:
+    tags: ['v*.*.*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Revisar las imágenes (formato real, 512 px como máximo y créditos)
+        run: node tools/revisar-imagenes.js
+      - name: Comprobar que la etiqueta coincide con package.json
+        run: |
+          version=$(node -p "require('./package.json').version")
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "La etiqueta $GITHUB_REF_NAME no coincide con la versión de package.json (v$version)"; exit 1
+          fi
+      - run: npm test
+      - name: Notas de la versión
+        run: node tools/notas-version.js "${GITHUB_REF_NAME#v}" > notas.md
+      - name: Crear la release
+        run: gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" --notes-file notas.md --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -1,0 +1,44 @@
+name: Fallo o error
+description: Algo no funciona como debería.
+title: "[Fallo] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por avisar. Cuantos más datos des, más fácil será arreglarlo. **No pongas datos personales.**
+  - type: textarea
+    id: que-paso
+    attributes:
+      label: ¿Qué ocurrió?
+      description: Cuéntalo con tus palabras.
+    validations:
+      required: true
+  - type: textarea
+    id: esperaba
+    attributes:
+      label: ¿Qué esperabas que pasara?
+  - type: textarea
+    id: pasos
+    attributes:
+      label: ¿Cómo se repite?
+      description: Los pasos, en orden.
+  - type: input
+    id: partida
+    attributes:
+      label: Jugadores y roles del mazo
+      placeholder: "8 jugadores: 2 lobos, Vidente, Bruja, Cazador…"
+  - type: input
+    id: dispositivos
+    attributes:
+      label: Dispositivos y navegadores
+      placeholder: "Tablet Android con Chrome; iPhone con Safari…"
+  - type: input
+    id: version
+    attributes:
+      label: Versión
+      description: La verás en «Acerca de» (por ejemplo 0.2.0).
+  - type: textarea
+    id: capturas
+    attributes:
+      label: Capturas o mensajes de error (opcional)

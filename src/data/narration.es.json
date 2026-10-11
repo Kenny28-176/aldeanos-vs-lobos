@@ -1,0 +1,162 @@
+{
+  "_nota": "Frases del narrador (textos originales de este proyecto). Si el valor es una lista, se elige una al azar. {nombre}, {rol}, {n} se sustituyen.",
+  "anochecer": [
+    "Cae la noche sobre la aldea. Todos cierran los ojos y guardan silencio.",
+    "La noche cubre la aldea. Cerrad los ojos y que nadie haga ruido."
+  ],
+  "pasos": {
+    "lobos": {
+      "despertar": "Hombres Lobo, despertad. Elegid en vuestro celular a vuestra víctima. Debéis estar todos de acuerdo.",
+      "dormir": "Hombres Lobo, volved a dormir."
+    },
+    "cupido": {
+      "despertar": "Arquero del Amor, despierta. Elige en tu celular a los dos enamorados.",
+      "dormir": "Arquero del Amor, vuelve a dormir."
+    },
+    "vidente": {
+      "despertar": "Vidente, despierta. Elige a quién quieres descubrir.",
+      "dormir": "Vidente, vuelve a dormir."
+    },
+    "enamorados": {
+      "despertar": "Enamorados, despertad. Mirad vuestro celular y reconoceos.",
+      "dormir": "Enamorados, volved a dormir."
+    },
+    "dos_hermanas": {
+      "despertar": "Los Susurros, despertad y reconoceos.",
+      "dormir": "Susurros, volved a dormir."
+    },
+    "tres_hermanos": {
+      "despertar": "La Hermandad, despertad y reconoceos.",
+      "dormir": "Hermandad, volved a dormir."
+    },
+    "protector": {
+      "despertar": "Guardián, despierta. Elige a quién proteges esta noche.",
+      "dormir": "Guardián, vuelve a dormir."
+    },
+    "bruja": {
+      "despertar": "Alquimista, despierta. Mira a quién han atacado y decide si usas tus pociones.",
+      "dormir": "Alquimista, vuelve a dormir."
+    },
+    "comediante": {
+      "despertar": "Bufón, despierta. Si quieres, elige uno de los personajes que puedes interpretar esta noche.",
+      "dormir": "Bufón, vuelve a dormir."
+    },
+    "zorro": {
+      "despertar": "Zorro, despierta. Si quieres, señala a quién olfatear.",
+      "dormir": "Zorro, vuelve a dormir."
+    },
+    "juez": {
+      "despertar": "Juez, despierta. Mira en tu celular cómo funciona tu poder.",
+      "dormir": "Juez, vuelve a dormir."
+    },
+    "nino_salvaje": {
+      "despertar": "Niño Salvaje, despierta. Elige a tu mentor.",
+      "dormir": "Niño Salvaje, vuelve a dormir."
+    },
+    "domador": {
+      "despertar": "Domadora, despierta. Mira tu celular.",
+      "dormir": "Domadora, vuelve a dormir."
+    },
+    "perro_lobo": {
+      "despertar": "Doble Naturaleza, despierta. ¿Fiel a la aldea o bestia de la manada? Decide en tu celular.",
+      "dormir": "Doble Naturaleza, vuelve a dormir."
+    },
+    "albino": {
+      "despertar": "Lobo Lunar, despierta tú solo. Puedes eliminar a un Hombre Lobo.",
+      "dormir": "Lobo Lunar, vuelve a dormir."
+    },
+    "infecto": {
+      "despertar": "Corruptor, despierta. ¿Quieres corromper a la víctima?",
+      "dormir": "Corruptor, vuelve a dormir."
+    },
+    "feroz": {
+      "despertar": "Lobo Feroz, despierta. ¿Tienes hambre de una segunda víctima?",
+      "dormir": "Lobo Feroz, vuelve a dormir."
+    },
+    "flautista": {
+      "despertar": "Flautista de las Sombras, despierta. Elige a quién hechizar esta noche.",
+      "dormir": "Flautista, vuelve a dormir."
+    },
+    "hechizados": {
+      "despertar": "Los hechizados, despertad. Mirad vuestro celular y reconoceos.",
+      "dormir": "Hechizados, volved a dormir."
+    }
+  },
+  "amanecer": "Los primeros rayos de sol iluminan la aldea. Todos despiertan y abren los ojos.",
+  "amanecerSinMuertos": [
+    "Nadie ha muerto esta noche. La aldea respira aliviada… por ahora.",
+    "Milagro: esta noche no hay víctimas."
+  ],
+  "amanecerConMuertos": "Pero algo terrible ha ocurrido durante la noche…",
+  "muerte": {
+    "noche": "{nombre} no ha sobrevivido a la noche.",
+    "linchado": "La aldea ha linchado a {nombre}.",
+    "disparo": "El disparo del Cazador alcanza a {nombre}.",
+    "pena": "{nombre} muere de pena: no puede vivir sin {de}.",
+    "oxido": "{nombre} ha amanecido muerto: la espada del Caballero le contagió una enfermedad mortal."
+  },
+  "revelacion": "{nombre} era… ¡{rol}!",
+  "revelacionOculta": "La carta de {nombre} queda en secreto.",
+  "reaccion": {
+    "lobo": [
+      "¡Un lobo menos! ¡Que lo celebre la aldea!",
+      "¡Bien hecho, aldeanos! Ese pelaje ya no asustará a nadie.",
+      "¡Aúuu… se acabó! Un Hombre Lobo cae."
+    ],
+    "aldeaPoder": [
+      "¡Qué pérdida! La aldea se queda sin {rol}.",
+      "Hay lágrimas en la aldea: {rol} ya no está."
+    ],
+    "aldea": [
+      "Un inocente menos. Los lobos se relamen.",
+      "Descanse en paz. Era uno de los nuestros."
+    ],
+    "otro": [
+      "El misterio crece en la aldea."
+    ]
+  },
+  "debate": "Que empiece el debate. ¿Quién de vosotros es un Hombre Lobo?",
+  "votacion": "Se acabó el debate. Votad en vuestro celular a quien queráis linchar.",
+  "votosRevelados": "Estos son los votos.",
+  "empate": "¡Empate! Nadie será linchado hoy.",
+  "nadieVota": "Nadie ha votado. Hoy no se lincha a nadie.",
+  "victoria": {
+    "aldea": "¡La aldea ha ganado! Todos los Hombres Lobo han sido eliminados.",
+    "lobos": "¡Los Hombres Lobo han ganado! La aldea ha caído en la oscuridad.",
+    "nadie": "No queda nadie con vida. Nadie gana.",
+    "enamorados": "¡Los enamorados han ganado! Su amor ha sobrevivido a todo.",
+    "angel": "¡El Ángel Celestial ha ganado! Ha vuelto al cielo en la primera votación.",
+    "flautista": "¡El Flautista de las Sombras ha ganado! Toda la aldea baila hechizada al son de su música.",
+    "albino": "¡El Lobo Lunar ha ganado! Es el último superviviente de la aldea.",
+    "sectario": "¡El Cultista ha ganado! El otro grupo ha sido aniquilado."
+  },
+  "alguacil": "Antes del debate, elegid al Alguacil en vuestro celular. Su voto contará doble.",
+  "alguacilElegido": "{nombre} es el Alguacil.",
+  "sucesor": "{nombre} era el Alguacil. Con su último suspiro, designa a su sucesor.",
+  "cazador": "¡{nombre} era el Cazador! Antes de morir, dispara a alguien desde su celular.",
+  "cazadorNoDispara": "El Cazador no ha llegado a disparar.",
+  "chivo": "¡Empate! Y como siempre, paga el Chivo Expiatorio.",
+  "chivoElige": "Antes de irse, el Chivo Expiatorio decide quién podrá votar en la próxima votación.",
+  "votantesElegidos": "En la próxima votación solo votarán: {nombres}.",
+  "indultoTonto": "¡Un momento! {nombre} es el Inocente del Pueblo. Avergonzados, le perdonan la vida, pero ya nunca podrá votar.",
+  "aldeaSinPoderes": "¡La aldea ha matado a su Anciano! Desolados, todos los aldeanos pierden sus poderes.",
+  "reglas": [
+    "Os cuento lo básico. Cada noche, los lobos eligen en secreto a una víctima. Cada día, la aldea debate y vota para eliminar a un sospechoso. Los aldeanos ganan si eliminan a todos los lobos; los lobos ganan si acaban con todos los aldeanos. Cada uno tiene un papel secreto en su celular. Mucha suerte, y que no os engañen."
+  ],
+  "comedianteCartas": "El Bufón de las Mil Caras podrá interpretar a estos personajes: {cartas}.",
+  "sectarioGrupos": "Entre vosotros se esconde el Cultista. La aldea se divide en dos grupos. Grupo del Sol: {sol}. Grupo de la Luna: {luna}.",
+  "angelPrimerDia": "Un Ángel Celestial ha bajado a la aldea. Antes de la primera noche, todos se reúnen para debatir y votar.",
+  "debateAngel": "Que empiece el debate. ¿Quién de vosotros merece ser el primero en irse?",
+  "segundaVotacion": "¡El Juez ha decidido que habrá una segunda votación! Votad de nuevo, sin debate.",
+  "linchamientoDecidido": "La aldea ha decidido linchar a {nombre}. Pero antes de revelar su carta…",
+  "sirvienta": "Doncella Leal: si quieres ocupar el lugar de {nombre}, este es el momento.",
+  "sirvientaRevela": "¡Un momento! {sirvienta} era la Doncella Leal y se sacrifica por {nombre}: toma su lugar en secreto.",
+  "gruñido": [
+    "¡Grrrr! El oso de la Domadora gruñe: un Hombre Lobo se sienta junto a ella.",
+    "¡El oso gruñe! Hay un lobo junto a la Domadora."
+  ],
+  "saltoDebate": "La aldea ya ha decidido. Pasemos a la votación.",
+  "reparto": [
+    "Mirad vuestro celular: ahí está vuestra carta secreta. Memorizadla, que nadie la vea, y pulsad Listo."
+  ]
+}

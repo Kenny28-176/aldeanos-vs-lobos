@@ -1,0 +1,42 @@
+name: Análisis de seguridad (CodeQL)
+
+# Revisión automática del código con el análisis estático de GitHub (gratis en repositorios públicos). Los avisos salen en
+# Security → Code scanning. Se ejecuta con cada cambio en main, en cada pull request y una vez por semana.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '23 4 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: codeql-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analizar:
+    name: CodeQL (JavaScript)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: github/codeql-action/init@v4
+        with:
+          languages: javascript-typescript
+          build-mode: none
+          # Las bibliotecas de terceros de public/vendor se actualizan con tools/vendor.js: no son código del proyecto.
+          config: |
+            paths-ignore:
+              - public/vendor
+              - _sitio
+      - uses: github/codeql-action/analyze@v4
+        with:
+          category: /language:javascript-typescript

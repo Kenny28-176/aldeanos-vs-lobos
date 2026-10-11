@@ -1,0 +1,15 @@
+node_modules/
+# Material de terceros con derechos de autor (reglamentos escaneados, fotos de cartas…):
+# nunca se sube al repositorio.
+docs/reglamento/
+*.pdf
+# Capturas y archivos temporales de las pruebas
+/capturas/
+.env
+.env.*
+_sitio/
+firebase-debug.log
+firebase-debug.*.log
+database-debug.log
+ui-debug.log
+.firebase/

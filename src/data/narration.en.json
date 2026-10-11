@@ -1,0 +1,162 @@
+{
+ "_nota": "Narrator phrases (original texts of this project). If the value is a list, one is chosen at random. {nombre}, {rol}, {n} are replaced.",
+ "anochecer": [
+  "Night falls over the village. Everyone closes their eyes and stays silent.",
+  "Night covers the village. Close your eyes and let nobody make a sound."
+ ],
+ "pasos": {
+  "lobos": {
+   "despertar": "Werewolves, wake up. Choose your victim on your phones. You must all agree.",
+   "dormir": "Werewolves, go back to sleep."
+  },
+  "cupido": {
+   "despertar": "Archer, wake up. Choose the two lovers on your phone.",
+   "dormir": "Archer, go back to sleep."
+  },
+  "vidente": {
+   "despertar": "Seer, wake up. Choose whom you want to discover.",
+   "dormir": "Seer, go back to sleep."
+  },
+  "enamorados": {
+   "despertar": "Lovers, wake up. Look at your phones and recognise each other.",
+   "dormir": "Lovers, go back to sleep."
+  },
+  "dos_hermanas": {
+   "despertar": "The Whispers, wake up and recognise each other.",
+   "dormir": "Whispers, go back to sleep."
+  },
+  "tres_hermanos": {
+   "despertar": "The Brotherhood, wake up and recognise each other.",
+   "dormir": "Brotherhood, go back to sleep."
+  },
+  "protector": {
+   "despertar": "Guardian, wake up. Choose whom you protect tonight.",
+   "dormir": "Guardian, go back to sleep."
+  },
+  "bruja": {
+   "despertar": "Alchemist, wake up. See who has been attacked and decide whether you use your potions.",
+   "dormir": "Alchemist, go back to sleep."
+  },
+  "comediante": {
+   "despertar": "Jester, wake up. If you want, choose one of the characters you can play tonight.",
+   "dormir": "Jester, go back to sleep."
+  },
+  "zorro": {
+   "despertar": "Fox, wake up. If you want, point to whom you will sniff.",
+   "dormir": "Fox, go back to sleep."
+  },
+  "juez": {
+   "despertar": "Judge, wake up. Look on your phone at how your power works.",
+   "dormir": "Judge, go back to sleep."
+  },
+  "nino_salvaje": {
+   "despertar": "Wild Child, wake up. Choose your mentor.",
+   "dormir": "Wild Child, go back to sleep."
+  },
+  "domador": {
+   "despertar": "Beast Tamer, wake up. Look at your phone.",
+   "dormir": "Tamer, go back to sleep."
+  },
+  "perro_lobo": {
+   "despertar": "Dual Nature, wake up. Loyal hound or wild wolf? Decide on your phone.",
+   "dormir": "Dual Nature, go back to sleep."
+  },
+  "albino": {
+   "despertar": "Moon Wolf, wake up on your own. You can eliminate a Werewolf.",
+   "dormir": "Moon Wolf, go back to sleep."
+  },
+  "infecto": {
+   "despertar": "Corruptor, wake up. Do you want to corrupt the victim?",
+   "dormir": "Corruptor, go back to sleep."
+  },
+  "feroz": {
+   "despertar": "Dire Wolf, wake up. Are you hungry for a second victim?",
+   "dormir": "Dire Wolf, go back to sleep."
+  },
+  "flautista": {
+   "despertar": "Shadow Piper, wake up. Choose whom to enchant tonight.",
+   "dormir": "Shadow Piper, go back to sleep."
+  },
+  "hechizados": {
+   "despertar": "The enchanted, wake up. Look at your phones and recognise each other.",
+   "dormir": "Enchanted ones, go back to sleep."
+  }
+ },
+ "amanecer": "The first rays of sun light up the village. Everyone wakes up and opens their eyes.",
+ "amanecerSinMuertos": [
+  "Nobody died tonight. The village breathes a sigh of relief… for now.",
+  "A miracle: there are no victims tonight."
+ ],
+ "amanecerConMuertos": "But something terrible has happened during the night…",
+ "muerte": {
+  "noche": "{nombre} did not survive the night.",
+  "linchado": "The village has lynched {nombre}.",
+  "disparo": "The Hunter's shot hits {nombre}.",
+  "pena": "{nombre} dies of grief: they cannot live without {de}.",
+  "oxido": "{nombre} has been found dead: the Knight's sword gave them a deadly disease."
+ },
+ "revelacion": "{nombre} was… {rol}!",
+ "revelacionOculta": "{nombre}'s card remains a secret.",
+ "reaccion": {
+  "lobo": [
+   "One wolf fewer! Let the village celebrate!",
+   "Well done, villagers! That fur will scare nobody any more.",
+   "Awoo… it is over! A Werewolf falls."
+  ],
+  "aldeaPoder": [
+   "What a loss! The village is left without {rol}.",
+   "There are tears in the village: {rol} is gone."
+  ],
+  "aldea": [
+   "One innocent fewer. The wolves lick their lips.",
+   "Rest in peace. They were one of us."
+  ],
+  "otro": [
+   "The mystery grows in the village."
+  ]
+ },
+ "debate": "Let the debate begin. Which of you is a Werewolf?",
+ "votacion": "The debate is over. Vote on your phone for whoever you want to lynch.",
+ "votosRevelados": "These are the votes.",
+ "empate": "A tie! Nobody will be lynched today.",
+ "nadieVota": "Nobody has voted. Nobody is lynched today.",
+ "victoria": {
+  "aldea": "The village has won! All the Werewolves have been eliminated.",
+  "lobos": "The Werewolves have won! The village has fallen into darkness.",
+  "nadie": "Nobody is left alive. Nobody wins.",
+  "enamorados": "The lovers have won! Their love has survived everything.",
+  "angel": "The Divine Angel has won! They have gone back to heaven in the first vote.",
+  "flautista": "The Shadow Piper has won! The whole village dances, enchanted by the music.",
+  "albino": "The Moon Wolf has won! They are the last survivor of the village.",
+  "sectario": "The Cultist has won! The other group has been wiped out."
+ },
+ "alguacil": "Before the debate, choose the Sheriff on your phones. Their vote will count double.",
+ "alguacilElegido": "{nombre} is the Sheriff.",
+ "sucesor": "{nombre} was the Sheriff. With their last breath, they appoint their successor.",
+ "cazador": "{nombre} was the Hunter! Before dying, they shoot someone from their phone.",
+ "cazadorNoDispara": "The Hunter did not get to shoot.",
+ "chivo": "A tie! And, as always, the Scapegoat pays.",
+ "chivoElige": "Before leaving, the Scapegoat decides who may vote in the next vote.",
+ "votantesElegidos": "In the next vote only these will vote: {nombres}.",
+ "indultoTonto": "Wait a moment! {nombre} is the Village Fool. Ashamed, they spare their life, but they will never be able to vote again.",
+ "aldeaSinPoderes": "The village has killed its Elder! Devastated, all the villagers lose their powers.",
+ "reglas": [
+  "Let me tell you the basics. Every night, the wolves secretly choose a victim. Every day, the village debates and votes to eliminate a suspect. The villagers win if they eliminate all the wolves; the wolves win if they finish off all the villagers. Each of you has a secret role on your phone. Good luck, and do not let them fool you."
+ ],
+ "comedianteCartas": "The Jester will be able to play these characters: {cartas}.",
+ "sectarioGrupos": "Among you hides the Cultist. The village is split into two groups. Sun group: {sol}. Moon group: {luna}.",
+ "angelPrimerDia": "A Divine Angel has come down to the village. Before the first night, everyone gathers to debate and vote.",
+ "debateAngel": "Let the debate begin. Which of you deserves to be the first to leave?",
+ "segundaVotacion": "The Judge has decided there will be a second vote! Vote again, with no debate.",
+ "linchamientoDecidido": "The village has decided to lynch {nombre}. But before revealing their card…",
+ "sirvienta": "Handmaiden: if you want to take {nombre}'s place, now is the moment.",
+ "sirvientaRevela": "Wait a moment! {sirvienta} was the Handmaiden and sacrifices themselves for {nombre}: they secretly take their place.",
+ "gruñido": [
+  "Grrrr! The Beast Tamer's bear growls: a Werewolf is sitting next to them.",
+  "The bear growls! There is a wolf next to the Beast Tamer."
+ ],
+ "saltoDebate": "The village has already decided. Let us move on to the vote.",
+ "reparto": [
+  "Look at your phones: your secret card is there. Memorise it, let nobody see it, and press Ready."
+ ]
+}

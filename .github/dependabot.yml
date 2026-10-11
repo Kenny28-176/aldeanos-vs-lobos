@@ -1,0 +1,10 @@
+# Avisa (con un pull request) cuando hay versiones nuevas de las acciones de GitHub que usa la integración continua.
+# Las bibliotecas copiadas en public/vendor se revisan con: node tools/vendor.js --comprobar
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "CI"

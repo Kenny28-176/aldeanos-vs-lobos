@@ -1,0 +1,19 @@
+SONIDOS PROPIOS (opcional)
+
+La app genera todos sus sonidos y su música. Si quieres usar un sonido de verdad
+(por ejemplo, un aullido grabado), copia aquí el MP3 con uno de estos nombres y
+añade el nombre (sin .mp3) a lista.json. Ejemplo de lista.json:
+
+  ["aullido", "musica-noche"]
+
+Efectos:
+  aullido, manada, campana, amanecer, latido, disparo, revelacion, celebracion,
+  tristeza, redoble, fanfarria, victoriaAldea, victoriaLobos, victoriaEnamorados,
+  viento, indulto, tic, union, whoosh, noche,
+  oso, flauta, arpa, cristal, caldero, olfato, escudo, infeccion, feroz, ladrido,
+  mazo, oxido, coro, tambores, comedia, hechizo
+
+Música (se repite en bucle):
+  musica-noche, musica-dia, musica-tension
+
+Usa sonidos con licencia libre (por ejemplo CC0) si vas a publicar la web.

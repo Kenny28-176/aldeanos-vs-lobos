@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#120e0b" />
+  <meta name="description" content="Aldeanos vs Lobos: narrador automático para juegos de roles ocultos (encuentra al impostor). Una tablet narra la partida y cada jugador usa su celular. Gratis y de código abierto." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/icono-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Aldeanos vs Lobos</title>
+  <link rel="stylesheet" href="vendor/fuentes/fuentes.css" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body class="noche">
+  <div id="fondo"></div>
+  <main class="movil portada-movil">
+    <img class="carta-portada" src="img/portada.webp" alt="" />
+    <h1 class="titulo-juego">Aldeanos vs Lobos<small>narrador automático</small></h1>
+    <p class="presentacion">
+      El narrador para jugar a <b>encontrar al impostor</b> con tus amigos: una tablet en el centro de la mesa
+      cuenta la historia y lleva las reglas, y cada jugador usa su celular para ver su carta y actuar en secreto.
+      Sin instalar nada.
+    </p>
+    <a class="btn grande brillo" href="player.html?lang=es">📱 Soy jugador</a>
+    <a class="btn sec grande" href="narrator.html?lang=es">🌕 Soy el narrador (tablet)</a>
+    <nav class="enlaces-pie">
+      <a href="como-jugar.html">¿Cómo se juega?</a>
+      <a href="acerca.html">Acerca de · licencia · privacidad</a>
+      <a href="https://github.com/Kenny28-176/aldeanos-vs-lobos" rel="noopener">Código abierto (MIT)</a>
+      <a href="en/index.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </main>
+  <script type="module" src="../src/ui/estatica.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "_nota": "Orden de llamada de la noche. Un paso entra si hay algún jugador vivo actuando como alguno de sus roles. Algunos pasos deciden su presencia en el motor (steps.js → presente): lobos (mientras quede algún lobo, también uno infectado o convertido que no tenga carta de lobo), albino (noches pares) y cupido, niño salvaje y perro lobo en noches posteriores solo si la Doncella Leal adoptó ese rol. La Espía Silenciosa (nina) espía dentro del paso 'lobos'.",
+  "primeraNoche": ["comediante", "cupido", "vidente", "zorro", "enamorados", "juez", "dos_hermanas", "tres_hermanos", "nino_salvaje", "domador", "protector", "piromano", "perro_lobo", "lobos", "infecto", "feroz", "bruja", "flautista", "hechizados", "cuervo"],
+  "cadaNoche": ["comediante", "cupido", "vidente", "zorro", "enamorados", "nino_salvaje", "protector", "piromano", "perro_lobo", "lobos", "albino", "infecto", "feroz", "bruja", "flautista", "hechizados", "cuervo"],
+  "pasos": {
+    "comediante": { "roles": ["comediante"], "duracion": "paso" },
+    "cupido": { "roles": ["cupido"], "duracion": "paso" },
+    "vidente": { "roles": ["vidente"], "duracion": "paso" },
+    "zorro": { "roles": ["zorro"], "duracion": "paso" },
+    "enamorados": { "roles": ["cupido"], "duracion": "corto" },
+    "juez": { "roles": ["juez"], "duracion": "corto" },
+    "dos_hermanas": { "roles": ["dos_hermanas"], "duracion": "corto" },
+    "tres_hermanos": { "roles": ["tres_hermanos"], "duracion": "corto" },
+    "nino_salvaje": { "roles": ["nino_salvaje"], "duracion": "paso" },
+    "domador": { "roles": ["domador"], "duracion": "corto" },
+    "protector": { "roles": ["protector"], "duracion": "paso" },
+    "perro_lobo": { "roles": ["perro_lobo"], "duracion": "paso" },
+    "lobos": { "roles": ["lobo", "lobo_feroz", "infecto", "albino", "perro_lobo", "nino_salvaje"], "duracion": "lobos" },
+    "albino": { "roles": ["albino"], "duracion": "paso" },
+    "infecto": { "roles": ["infecto"], "duracion": "corto" },
+    "feroz": { "roles": ["lobo_feroz"], "duracion": "paso" },
+    "bruja": { "roles": ["bruja"], "duracion": "paso" },
+    "flautista": { "roles": ["flautista"], "duracion": "paso" },
+    "hechizados": { "roles": ["flautista"], "duracion": "corto" },
+    "piromano": { "roles": ["piromano"], "duracion": "paso" },
+    "cuervo": { "roles": ["cuervo"], "duracion": "paso" }
+  }
+}

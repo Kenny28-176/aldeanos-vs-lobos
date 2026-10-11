@@ -1,0 +1,11 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Aldeanos vs Lobos</title>
+<noscript><meta http-equiv="refresh" content="0; url=public/index.html" /></noscript>
+<script>
+  // Entra en la portada del idioma de la persona: el que eligió o, si no, el de su navegador.
+  var idioma = '';
+  try { idioma = localStorage.getItem('lobos:idioma') || ''; } catch (e) { /* sin almacenamiento */ }
+  location.replace(/^en/i.test(idioma || navigator.language || '') ? 'public/en/index.html' : 'public/index.html');
+</script>
+<a href="public/index.html">Entrar</a> · <a href="public/en/index.html">Enter</a>

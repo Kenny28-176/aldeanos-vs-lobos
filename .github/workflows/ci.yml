@@ -1,0 +1,67 @@
+name: CI
+
+# Se ejecuta en cada push a main y en cada pull request.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pruebas:
+    name: Pruebas del motor (Node ${{ matrix.node }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [22, 24]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm test
+
+  # Reglas de seguridad y partidas completas en Chrome, contra el EMULADOR de Firebase (no se toca ninguna base real).
+  emulador:
+    name: Emulador de Firebase (${{ matrix.prueba }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        prueba: [reglas, partida, partida-accesible, ensayo, ensayo-en, ensayo-en-accesible, idioma, accesibilidad, sin-conexion, sin-conexion-en]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/cache@v6
+        with:
+          path: ~/.cache/firebase/emulators
+          key: emulador-firebase-${{ runner.os }}-v1
+      - name: Probar ${{ matrix.prueba }}
+        run: npm run e2e:emulador
+        env:
+          PRUEBAS: ${{ matrix.prueba }}
+          CHROME: google-chrome
+          CI: 'true'
+      - name: Guardar las capturas si algo falla
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: capturas-${{ matrix.prueba }}
+          path: /tmp/lobos-e2e
+          if-no-files-found: ignore
+          retention-days: 7

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#120e0b" />
+  <meta name="description" content="Aldeanos vs Lobos: qué es, licencia de código abierto (MIT), aviso legal, privacidad y créditos." />
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="img/icono-192.png" />
+  <title>Acerca de · Aldeanos vs Lobos</title>
+  <link rel="stylesheet" href="vendor/fuentes/fuentes.css" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body class="noche">
+  <div id="fondo"></div>
+  <main class="pagina">
+    <nav class="enlaces-pie arriba"><a href="index.html">← Volver al inicio</a></nav>
+    <h1 class="titulo-juego">Acerca de<small>Aldeanos vs Lobos</small></h1>
+
+    <section class="vidrio">
+      <h2>Qué es</h2>
+      <p>
+        <b>Aldeanos vs Lobos</b> es un narrador automático para juegos de roles ocultos y deducción social (el género
+        de juegos de fiesta conocido como «Hombre Lobo» o «Mafia»), en los que un grupo debate para descubrir a los
+        impostores. Es un proyecto <b>independiente, gratuito y sin ánimo de lucro</b>: sin publicidad, sin cobros y
+        sin venta de datos.
+      </p>
+      <p>
+        Es <b>código abierto</b> bajo licencia <b>MIT</b>: puedes usarlo, copiarlo y modificarlo. El código está en
+        <a href="https://github.com/Kenny28-176/aldeanos-vs-lobos" rel="noopener">GitHub</a>, y ahí mismo puedes montar tu
+        propia copia siguiendo la guía del README.
+      </p>
+    </section>
+
+    <section class="vidrio">
+      <h2>Aviso legal</h2>
+      <p>
+        Este proyecto <b>no está afiliado, patrocinado ni respaldado</b> por ningún editor, autor o titular de marcas
+        de juegos de cartas o de mesa comerciales, y <b>no incluye</b> sus textos, ilustraciones, logotipos, nombres
+        comerciales ni material de sus reglamentos. Los nombres de los roles son denominaciones genéricas de personajes (Vidente, Cazador…) o nombres propios de este
+        proyecto. Las marcas de terceros que pudieran mencionarse pertenecen a sus propietarios.
+      </p>
+      <p>
+        Si eres titular de derechos y crees que algún contenido de este proyecto los infringe, abre un
+        <a href="https://github.com/Kenny28-176/aldeanos-vs-lobos/issues" rel="noopener">issue en el repositorio</a> indicando qué
+        contenido es: lo revisaremos y, si procede, lo retiraremos con la mayor rapidez.
+      </p>
+      <p class="tenue">Este texto es informativo y no constituye asesoría legal. El software se ofrece «tal cual», sin garantías.</p>
+    </section>
+
+    <section class="vidrio">
+      <h2>Privacidad</h2>
+      <ul>
+        <li>No hay cuentas, ni anuncios, ni analítica, ni cookies de seguimiento.</li>
+        <li>Para jugar se guarda en un servidor de <b>Firebase (Google)</b> tu <b>apodo</b>, tu carta y el estado de la partida. Se borra al descartar la sala y, de forma automática, pasados unos días.</li>
+        <li>En tu propio dispositivo se guardan tus preferencias (nombre, voz, sonido, idioma y pantalla), un identificador aleatorio de jugador y una copia de la web para que cargue más rápido y aguante los cortes de red. La tablet guarda además, solo en su navegador, un historial de las partidas terminadas (quién jugó, con qué rol y quién ganó); se puede exportar y borrar, y no se sube a ningún servidor.</li>
+        <li>La web no carga código, tipografías ni imágenes de servidores de terceros: todo se sirve desde el propio sitio. El único servicio externo es Firebase, para sincronizar la partida (y quien aloja la web, que ve tu dirección IP como en cualquier página).</li>
+        <li>No escribas datos personales en tu apodo. Quien aloje su propia copia es responsable de su servidor.</li>
+      </ul>
+    </section>
+
+    <section class="vidrio">
+      <h2>Licencias y créditos</h2>
+      <ul>
+        <li>Código, textos del juego (narración y guías) y sonidos generados por el código: <b>MIT</b>.</li>
+        <li>Icono de la app: original del proyecto (MIT).</li>
+        <li>Ilustraciones de los roles: ver <a href="https://github.com/Kenny28-176/aldeanos-vs-lobos/blob/main/public/img/CREDITOS.md" rel="noopener">CREDITOS.md</a>.</li>
+        <li><a href="https://preactjs.com" rel="noopener">Preact</a> (MIT), <a href="https://github.com/developit/htm" rel="noopener">htm</a> (Apache-2.0), <a href="https://firebase.google.com/docs/web/setup" rel="noopener">Firebase JS SDK</a> (Apache-2.0), <a href="https://github.com/kazuhikoarase/qrcode-generator" rel="noopener">qrcode-generator</a> (MIT).</li>
+        <li>Tipografías <b>Cinzel</b> e <b>IM Fell English</b> (SIL Open Font License 1.1), incluidas en el repositorio.</li>
+      </ul>
+    </section>
+
+    <p class="tenue pequeno centrado" id="version"></p>
+
+    <nav class="enlaces-pie">
+      <a href="index.html">← Volver al inicio</a>
+      <a href="como-jugar.html">¿Cómo se juega?</a>
+      <a href="en/acerca.html" hreflang="en" lang="en">English</a>
+    </nav>
+  </main>
+  <script type="module" src="../src/ui/estatica.js"></script>
+</body>
+</html>

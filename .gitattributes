@@ -1,0 +1,8 @@
+# Finales de línea iguales en todos los sistemas (así las huellas de public/vendor no cambian en Windows).
+* text=auto eol=lf
+*.woff2 binary
+*.webp binary
+*.png binary
+*.mp3 binary
+# Bibliotecas de terceros: byte a byte, sin ninguna conversión.
+public/vendor/** -text

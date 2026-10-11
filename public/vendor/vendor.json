@@ -1,0 +1,122 @@
+{
+  "generado": "2026-10-11",
+  "librerias": {
+    "firebase": {
+      "nombre": "Firebase JS SDK (app + realtime database)",
+      "version": "13.0.0",
+      "licencia": "Apache-2.0",
+      "archivos": [
+        {
+          "destino": "firebase/firebase-app.js",
+          "sha256": "7cb48cbc5728f220562d05bd0aab8c17d8bda03c599ad8cb4ad0f042e4f65765",
+          "bytes": 106554,
+          "origen": "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js"
+        },
+        {
+          "destino": "firebase/firebase-database.js",
+          "sha256": "56bfa1828433e47292b50a8c36919320f85950452e26e04a9101b73f8c609d5b",
+          "bytes": 187085,
+          "origen": "https://www.gstatic.com/firebasejs/13.0.0/firebase-database.js"
+        },
+        {
+          "destino": "firebase/LICENSE",
+          "sha256": "065e45b5674f9bf76670496e5472611b3fbd87fbeaf99336725430a9909cb687",
+          "bytes": 14096,
+          "origen": "https://raw.githubusercontent.com/firebase/firebase-js-sdk/firebase%4013.0.0/LICENSE"
+        }
+      ]
+    },
+    "preact": {
+      "nombre": "htm + Preact (versión «standalone»)",
+      "version": "3.1.1",
+      "licencia": "Apache-2.0 (htm) y MIT (Preact)",
+      "archivos": [
+        {
+          "destino": "preact/standalone.module.js",
+          "sha256": "72284e8e9079c87817145df1110f74e8a2aa040b2fc384922e18dfcb46fc1fd7",
+          "bytes": 13194,
+          "origen": "https://unpkg.com/htm@3.1.1/preact/standalone.module.js"
+        },
+        {
+          "destino": "preact/LICENSE-htm",
+          "sha256": "740725f7252e750af735d0028cc534970772f513331e9f68150fede8fb3ce00f",
+          "bytes": 11341,
+          "origen": "https://unpkg.com/htm@3.1.1/LICENSE"
+        },
+        {
+          "destino": "preact/LICENSE-preact",
+          "sha256": "1fe6958409c8c257a70c587a18b6f7f412b179b456630790d30b2ec9a8e4b7d4",
+          "bytes": 1087,
+          "origen": "https://unpkg.com/preact@10/LICENSE"
+        }
+      ]
+    },
+    "qrcode": {
+      "nombre": "qrcode-generator",
+      "version": "1.4.4",
+      "licencia": "MIT",
+      "archivos": [
+        {
+          "destino": "qrcode/qrcode.js",
+          "sha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780",
+          "bytes": 56694,
+          "origen": "https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"
+        },
+        {
+          "destino": "qrcode/LICENSE",
+          "sha256": "3a850fa5f08101db6f40676c2786e10bd2cd5fff7b12ffdf1e0c434d4e49d90c",
+          "bytes": 1071,
+          "origen": "https://raw.githubusercontent.com/kazuhikoarase/qrcode-generator/master/LICENSE"
+        }
+      ]
+    },
+    "fuentes": {
+      "nombre": "Cinzel e IM Fell English (Google Fonts)",
+      "version": "v26 / v14",
+      "licencia": "SIL OFL 1.1",
+      "archivos": [
+        {
+          "destino": "fuentes/cinzel-latin-ext.woff2",
+          "sha256": "8fc2606f8ae6c569f444e138dba052d9a6e3f0657f9031796503bbb94eced600",
+          "bytes": 14540,
+          "origen": "https://fonts.gstatic.com/s/cinzel/v26/8vIJ7ww63mVu7gt7-GT7LEc.woff2"
+        },
+        {
+          "destino": "fuentes/cinzel-latin.woff2",
+          "sha256": "09941fb1c169c38fd414536b37690057fc01b3117a5c63dd6571186540c8f370",
+          "bytes": 25904,
+          "origen": "https://fonts.gstatic.com/s/cinzel/v26/8vIJ7ww63mVu7gt79mT7.woff2"
+        },
+        {
+          "destino": "fuentes/im-fell-english-latin-cursiva.woff2",
+          "sha256": "8fc678575e83868f82ce5aa6e023f056ea68d480e16dd108b3e14bc375c8fdea",
+          "bytes": 57808,
+          "origen": "https://fonts.gstatic.com/s/imfellenglish/v14/Ktk3ALSLW8zDe0rthJysWrnLsAzHFZOafYs.woff2"
+        },
+        {
+          "destino": "fuentes/im-fell-english-latin.woff2",
+          "sha256": "248300df1647bec49155a5cada1d65f719ae633ef48564d1f19b135a8a5b7f5f",
+          "bytes": 59880,
+          "origen": "https://fonts.gstatic.com/s/imfellenglish/v14/Ktk1ALSLW8zDe0rthJysWrnLsAzHEKOY.woff2"
+        },
+        {
+          "destino": "fuentes/fuentes.css",
+          "sha256": "582b64245813d3ceadcc3b1054212e08b372033449586bb5c2d33ec656cbc881",
+          "bytes": 1600
+        },
+        {
+          "destino": "fuentes/OFL-Cinzel.txt",
+          "sha256": "f2b3029aba64c378bf0963b62945eee15e564fe4330b934c8f2eb058282b5e83",
+          "bytes": 4383,
+          "origen": "https://raw.githubusercontent.com/google/fonts/main/ofl/cinzel/OFL.txt"
+        },
+        {
+          "destino": "fuentes/OFL-IMFellEnglish.txt",
+          "sha256": "2a3ca501fc4d5efcad9798531e3e06962b1e20c60e464f6cbd6c17630112c773",
+          "bytes": 4452,
+          "origen": "https://raw.githubusercontent.com/google/fonts/main/ofl/imfellenglish/OFL.txt"
+        }
+      ]
+    }
+  }
+}

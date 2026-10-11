@@ -1,0 +1,41 @@
+{
+  "name": "aldeanos-vs-lobos",
+  "private": true,
+  "type": "module",
+  "description": "Narrador automático para juegos de roles ocultos (deducción social): aldeanos contra lobos. Una tablet narra y cada jugador usa su celular.",
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "sim": "node tests/simulate.js",
+    "serve": "node tools/serve.js",
+    "e2e": "node tools/e2e.js",
+    "emulador": "npx -y firebase-tools@15 emulators:start --only database --project demo-lobos",
+    "e2e:emulador": "npx -y firebase-tools@15 emulators:exec --only database --project demo-lobos \"node tools/ci-emulador.js\"",
+    "vendor": "node tools/vendor.js",
+    "sitio": "node tools/construir-sitio.js",
+    "revisar:imagenes": "node tools/revisar-imagenes.js",
+    "reglas:comprobar": "node tools/comprobar-reglas-publicadas.js",
+    "reglas:publicar": "npx -y firebase-tools@15 deploy --only database",
+    "version:preparar": "node tools/preparar-version.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "version": "0.2.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenny28-176/aldeanos-vs-lobos.git"
+  },
+  "keywords": [
+    "hombre-lobo",
+    "werewolf",
+    "mafia",
+    "juego-de-mesa",
+    "deduccion-social",
+    "narrador",
+    "firebase",
+    "preact",
+    "pwa",
+    "espanol"
+  ]
+}

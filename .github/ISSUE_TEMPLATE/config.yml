@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Dudas sobre cómo jugar o montar tu copia
+    url: https://github.com/Kenny28-176/aldeanos-vs-lobos#readme
+    about: El README y la guía para alojar tu propia copia resuelven la mayoría de dudas.
+  - name: Aviso de seguridad (privado)
+    url: https://github.com/Kenny28-176/aldeanos-vs-lobos/security/advisories/new
+    about: Para fallos de seguridad, no abras un issue público.

@@ -1,0 +1,38 @@
+name: Derechos de autor o marcas
+description: Si crees que algún contenido del proyecto infringe tus derechos, cuéntanoslo aquí.
+title: "[Derechos] "
+labels: ["derechos"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Este proyecto es independiente, gratuito y sin ánimo de lucro, y quiere respetar los derechos de los demás.
+        Revisaremos el aviso con la mayor rapidez y, si procede, retiraremos el contenido.
+  - type: input
+    id: contenido
+    attributes:
+      label: ¿Qué contenido es?
+      description: El archivo, la ruta o la dirección donde está (por ejemplo `public/img/roles/vidente.webp`).
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: ¿Por qué crees que infringe tus derechos?
+      description: Indica qué obra o marca es y qué parte coincide.
+    validations:
+      required: true
+  - type: dropdown
+    id: relacion
+    attributes:
+      label: ¿Qué relación tienes con esos derechos?
+      options:
+        - Soy el titular
+        - Represento al titular
+        - Otra
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        No hace falta que escribas datos de contacto: te responderemos en este mismo issue.

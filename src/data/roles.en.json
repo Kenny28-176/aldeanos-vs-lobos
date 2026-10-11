@@ -1,0 +1,307 @@
+{
+ "_nota": "English texts for the roles (names, subtitles and guides). The rest of each role comes from roles.json.",
+ "roles": {
+  "lobo": {
+   "nombre": "The Werewolf",
+   "subtitulo": "The Feral Moon",
+   "guia": {
+    "resumen": "You are The Werewolf. By day you pretend to be just another villager; by night, with your pack, you devour an inhabitant.",
+    "cuando": "You wake up every night with the other wolves.",
+    "accion": "On your phone you will see your companions and the list of possible victims. You must ALL choose the same victim before time runs out; if you do not agree, nobody dies that night.",
+    "objetivo": "Eliminate every inhabitant who is not a wolf."
+   }
+  },
+  "aldeano": {
+   "nombre": "The Villager",
+   "subtitulo": "Simple Lives, Deep Roots",
+   "guia": {
+    "resumen": "You are The Villager. You have no supernatural powers. Your weapons are your nose for sniffing out lies and your voice in the debate.",
+    "cuando": "You never wake up at night.",
+    "accion": "By day, debate and vote on your phone for whoever you think is a Werewolf.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "lobo_feroz": {
+   "nombre": "The Dire Wolf",
+   "subtitulo": "The Voracious Hunter",
+   "guia": {
+    "resumen": "You are The Dire Wolf: you hunt with the pack and hunger for a second victim.",
+    "cuando": "You wake up with the wolves and then, again, on your own.",
+    "accion": "As long as no wolf has fallen (nor a Wild Child or a Dual Nature), each night you secretly choose a second victim. As soon as one falls, you lose that power.",
+    "objetivo": "Eliminate every inhabitant who is not a wolf."
+   }
+  },
+  "infecto": {
+   "nombre": "The Corruptor",
+   "subtitulo": "The Tread of Taints",
+   "guia": {
+    "resumen": "You are The Corruptor: your dark bite can taint an inhabitant and turn them into a werewolf.",
+    "cuando": "You wake up with the wolves and then, for a moment, on your own.",
+    "accion": "Once per game, you can corrupt the pack's victim: they do not die, they secretly become a Werewolf and keep their power.",
+    "objetivo": "Eliminate every inhabitant who is not a wolf."
+   }
+  },
+  "aldeano_aldeano": {
+   "nombre": "The Villager of Truth",
+   "subtitulo": "Innocence Revealed",
+   "guia": {
+    "resumen": "You are The Villager of Truth: your card is publicly known and the entire village knows you are innocent. You have no hidden power.",
+    "cuando": "You never wake up at night.",
+    "accion": "Use your credibility: your word carries immense weight in debates. You are a prime candidate for Sheriff.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "vidente": {
+   "nombre": "The Seer",
+   "subtitulo": "The Mystic Eye",
+   "guia": {
+    "resumen": "You are The Seer: every night you discover the true card and identity of a player through mystic visions.",
+    "cuando": "You wake up every night.",
+    "accion": "Choose a player on your phone and you will see their card instantly (it cannot be changed). Your visions are saved under “See my card”. Help the village discreetly: if the wolves find you out, they will come for you.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "cupido": {
+   "nombre": "The Archer",
+   "subtitulo": "The Cherub of L'Amour",
+   "guia": {
+    "resumen": "You are The Archer: with your arrows you bind two players forever (it can include yourself).",
+    "cuando": "You only wake up on the first night.",
+    "accion": "Choose the two lovers on your phone. If one dies, the other dies of grief. If they are on opposite sides, their objective becomes staying alive alone together.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "bruja": {
+   "nombre": "The Alchemist",
+   "subtitulo": "The Witch's Brew",
+   "guia": {
+    "resumen": "You are The Alchemist: you hold two single-use mystical brews in your cauldron: one saves the wolves' victim, and the other slays whomever you choose.",
+    "cuando": "You wake up every night, after the wolves.",
+    "accion": "You will see who was attacked tonight. You may heal them (even yourself), poison someone, do both or do nothing.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "cazador": {
+   "nombre": "The Hunter",
+   "subtitulo": "The Last Arrow",
+   "guia": {
+    "resumen": "You are The Hunter: if you die devoured, lynched or of grief, you unleash your crossbow to take someone down with you.",
+    "cuando": "You never wake up at night.",
+    "accion": "When you perish, your phone will prompt you to choose your target. Aim carefully.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "nina": {
+   "nombre": "The Quiet Spy",
+   "subtitulo": "Eyes in the Dark",
+   "guia": {
+    "resumen": "You are The Quiet Spy: you can peek at the Werewolves while they choose their prey.",
+    "cuando": "During the wolves' turn, every night.",
+    "accion": "Your phone will let you spy: you will see the name of a wolf. But if you are caught, you will die that night instead of their victim (and The Guardian cannot protect you).",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "protector": {
+   "nombre": "The Guardian",
+   "subtitulo": "Divine Protection",
+   "guia": {
+    "resumen": "You are The Guardian: each night you shield a player from the wolves' onslaught.",
+    "cuando": "You wake up every night, before the wolves.",
+    "accion": "Choose whom you protect (it can be yourself), but never the same player two nights in a row. It does not protect against potion poison or a spotted spy.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "anciano": {
+   "nombre": "The Elder",
+   "subtitulo": "Ancient Resilience",
+   "guia": {
+    "resumen": "You are The Elder: your ancient strength allows you to survive the first wolf attack.",
+    "cuando": "You never wake up at night.",
+    "accion": "You survive the wolves' first attack in silence. But if the village executes you (lynched, poisoned or shot), grief strips all villagers of their powers.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "cabeza_turco": {
+   "nombre": "The Scapegoat",
+   "subtitulo": "Village Blame",
+   "guia": {
+    "resumen": "You are The Scapegoat: if the village vote ends in a tie, the execution falls upon you.",
+    "cuando": "You never wake up at night.",
+    "accion": "Avoid ties. If lynched, before leaving you decide on your phone who gets to vote in the subsequent ballot.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "tonto": {
+   "nombre": "The Village Fool",
+   "subtitulo": "Sacred Pardon",
+   "guia": {
+    "resumen": "You are The Village Fool: if the village votes to lynch you, they realise your innocence and spare your life.",
+    "cuando": "You never wake up at night.",
+    "accion": "The first time you are lynched you survive, but you lose your voting rights (and the Sheriff's badge if you held it). If devoured or shot, you die.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "dos_hermanas": {
+   "nombre": "The Whispers",
+   "subtitulo": "Secrets in the Shadows",
+   "guia": {
+    "resumen": "You are The Whispers: you share a deep confidential bond in the village and know your ally's identity.",
+    "cuando": "Only on the first night, to recognise each other.",
+    "accion": "Your phone will show you who shares your whispers. You can place absolute trust in each other.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "tres_hermanos": {
+   "nombre": "The Brotherhood",
+   "subtitulo": "Blood Bond",
+   "guia": {
+    "resumen": "You are The Brotherhood: three loyal kin bound by blood and honour in the village.",
+    "cuando": "Only on the first night, to recognise each other.",
+    "accion": "Your phone will show you your brothers. You can place complete trust in one another.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "zorro": {
+   "nombre": "The Fox",
+   "subtitulo": "Beast Scent",
+   "guia": {
+    "resumen": "You are The Fox: your keen scent tracks down Werewolves among the neighbours.",
+    "cuando": "You wake up every night.",
+    "accion": "Choose a player: you will sniff them and their two living neighbours. If there is a wolf, you keep your scent; if none, you lose it forever. You are not forced to use it.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "domador": {
+   "nombre": "The Beast Tamer",
+   "subtitulo": "The Strength",
+   "guia": {
+    "resumen": "You are The Beast Tamer: your fierce companion bear senses wolves sitting adjacent to you.",
+    "cuando": "You only wake up on the first night, to learn your gift.",
+    "accion": "Each morning, if either of your living neighbours is a Werewolf, the bear will growl from the tablet. Listen closely.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "juez": {
+   "nombre": "The Judge",
+   "subtitulo": "Scales of Justice",
+   "guia": {
+    "resumen": "You are The Judge: guardian of the law, you can command an immediate second ballot.",
+    "cuando": "You only wake up on the first night, to see your secret button.",
+    "accion": "Once per game, during a vote, secretly tap “Second vote” on your phone: right after that vote ends, another one starts immediately without debate.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "caballero": {
+   "nombre": "The Knight of Swords",
+   "subtitulo": "Avenging Blade",
+   "guia": {
+    "resumen": "You are The Knight of Swords: your blade poisons whoever dares to feast on you.",
+    "cuando": "You never wake up at night.",
+    "accion": "If the wolves devour you, the closest responsible wolf to your left is infected and dies the following night.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "sirvienta": {
+   "nombre": "The Handmaiden",
+   "subtitulo": "Ultimate Sacrifice",
+   "guia": {
+    "resumen": "You are The Handmaiden: your devotion lets you take the place of anyone executed.",
+    "cuando": "You are called after each lynching, before the card is revealed.",
+    "accion": "If you wish, take the executed player's place: reveal your identity and secretly inherit their card and powers as if it were night one. You cannot if in love.",
+    "objetivo": "Win with the side of your active card."
+   }
+  },
+  "comediante": {
+   "nombre": "The Jester & Actor",
+   "subtitulo": "Master of Disguise",
+   "guia": {
+    "resumen": "You are The Jester & Actor: a performer capable of assuming other roles' gifts each night.",
+    "cuando": "You wake up first every night.",
+    "accion": "At the start, three role cards with powers are dealt face-up. Each night you may pick one to use its power that night; that card is then discarded.",
+    "objetivo": "Eliminate all the Werewolves."
+   }
+  },
+  "nino_salvaje": {
+   "nombre": "The Wild Child",
+   "subtitulo": "Feral Heart",
+   "guia": {
+    "resumen": "You are The Wild Child: a villager… as long as your mentor lives.",
+    "cuando": "You only wake up on the first night, to choose your mentor.",
+    "accion": "Choose another player as your mentor. If they die, you secretly turn into a Werewolf and wake with the pack.",
+    "objetivo": "Stand with the village while your mentor lives; with the wolves if they perish."
+   }
+  },
+  "perro_lobo": {
+   "nombre": "The Dual Nature",
+   "subtitulo": "The Wolf Within the Hound",
+   "guia": {
+    "resumen": "You are The Dual Nature: loyal hound of mankind or wild hunter of the pack?",
+    "cuando": "On the first night, to make your choice.",
+    "accion": "Choose permanently whether to be a Villager or a Werewolf. If you choose wolf, you wake with the pack from that night on.",
+    "objetivo": "That of your choice: the village or the wolves."
+   }
+  },
+  "flautista": {
+   "nombre": "The Shadow Piper",
+   "subtitulo": "Nocturnal Spell",
+   "guia": {
+    "resumen": "You are The Shadow Piper: your enchanting melody bewitches the village.",
+    "cuando": "You wake up every night, after The Alchemist.",
+    "accion": "Each night you charm two players. Charmed players wake afterwards to recognise each other. If The Corruptor infects you, you become an ordinary wolf.",
+    "objetivo": "Enchant every living player."
+   }
+  },
+  "angel": {
+   "nombre": "The Divine Angel",
+   "subtitulo": "Ascension Desire",
+   "guia": {
+    "resumen": "You are The Divine Angel: you seek to ascend back to heaven before darkness settles.",
+    "cuando": "You never wake up at night.",
+    "accion": "The game opens with a debate and a vote before the first night. If you get lynched in that very first vote, you win alone. Otherwise, you play as an ordinary villager.",
+    "objetivo": "Get eliminated in the opening vote."
+   }
+  },
+  "sectario": {
+   "nombre": "The Cultist",
+   "subtitulo": "Occult Rites",
+   "guia": {
+    "resumen": "You are The Cultist: holding dark rituals that split the village into Sun and Moon factions.",
+    "cuando": "You never wake up at night.",
+    "accion": "At the start, the village splits into two groups (Sun and Moon). Manipulate debates and votes to wipe out the opposite group.",
+    "objetivo": "Ensure the entire opposing faction perishes while you remain alive."
+   }
+  },
+  "albino": {
+   "nombre": "The Moon Wolf",
+   "subtitulo": "The Pale Predator",
+   "guia": {
+    "resumen": "You are The Moon Wolf: a solitary predator that despises villagers and rival wolves alike.",
+    "cuando": "You wake with the pack every night, and on even nights you wake alone.",
+    "accion": "With the pack you choose a victim normally. On your solo nights you may eliminate a rival Werewolf.",
+    "objetivo": "Be the sole survivor of the entire village."
+   }
+  },
+  "piromano": {
+   "nombre": "The Fire-Bringer",
+   "subtitulo": "Flames of Purity",
+   "guia": {
+    "resumen": "You are The Fire-Bringer: you can shield a player in protective flames. If Werewolves attack them that night, they survive and the closest wolf to their right perishes.",
+    "cuando": "You wake up every night before the Werewolves.",
+    "accion": "Choose a player (you may only use your power once per game).",
+    "objetivo": "Eliminate all the Werewolves."
+   },
+   "nota": "Simplified version, without buildings (the full version will arrive with Village mode)."
+  },
+  "cuervo": {
+   "nombre": "The Raven's Omen",
+   "subtitulo": "Harbinger of Fate",
+   "guia": {
+    "resumen": "You are The Raven's Omen: at the end of each night, you may curse a player. That player starts the next day's vote with 2 votes against them.",
+    "cuando": "You wake up at the end of each night.",
+    "accion": "Choose a player to curse them.",
+    "objetivo": "Eliminate all the Werewolves."
+   },
+   "nota": "Simplified version, without buildings (the full version will arrive with Village mode)."
+  }
+ }
+}

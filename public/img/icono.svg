@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Aldeanos vs Lobos">
+  <defs>
+    <radialGradient id="cielo" cx="75%" cy="12%" r="95%"><stop offset="0" stop-color="#243068"/><stop offset="1" stop-color="#04050b"/></radialGradient>
+    <mask id="creciente"><rect width="512" height="512" fill="#000"/><circle cx="414" cy="100" r="54" fill="#fff"/><circle cx="436" cy="90" r="46" fill="#000"/></mask>
+  </defs>
+  <rect width="512" height="512" rx="102" fill="url(#cielo)"/>
+  <circle cx="70" cy="90" r="5" fill="#fffff0" opacity=".85"/><circle cx="130" cy="150" r="3" fill="#fffff0" opacity=".85"/><circle cx="60" cy="200" r="3" fill="#fffff0" opacity=".85"/><circle cx="210" cy="60" r="4" fill="#fffff0" opacity=".85"/><circle cx="460" cy="190" r="3" fill="#fffff0" opacity=".85"/><circle cx="470" cy="270" r="4" fill="#fffff0" opacity=".85"/>
+  <rect width="512" height="512" fill="#f4f0e0" mask="url(#creciente)"/>
+  <polygon points="132,250 170,78 238,176 256,168 274,176 342,78 380,250 420,320 350,412 300,446 256,458 212,446 162,412 92,320" fill="#2b3150" stroke="#cfd8ff" stroke-width="7" stroke-linejoin="round"/>
+  <polygon points="160,230 178,120 222,186" fill="#5c4670"/><polygon points="352,230 334,120 290,186" fill="#5c4670"/>
+  <polygon points="256,300 214,360 232,430 256,440 280,430 298,360" fill="#464e76"/>
+  <polygon points="180,270 224,282 212,300 172,288" fill="#ffb21e"/><polygon points="332,270 288,282 300,300 340,288" fill="#ffb21e"/>
+  <ellipse cx="256" cy="440" rx="22" ry="12" fill="#0b0d16"/>
+</svg>
